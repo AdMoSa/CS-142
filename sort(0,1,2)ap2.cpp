@@ -24,7 +24,7 @@ int main()
         }
     }
     o=z+t;
-    for(int i=z;i<o;i++)
+    for(int i=z;i<=o;i++)
     {
         sort[i]=1;
         on++;
