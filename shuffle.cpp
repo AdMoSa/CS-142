@@ -36,7 +36,10 @@ int main()
 		ar[i+h]=temp[i-1];
         }
     }
-   
+    cout<<"The sequence after first shuffle is : \n";
+    for(int i=0;i<n;i++)
+        cout<<ar[i]<<"\n";
+
     int shuf[n],q;
     if(n%4!=0)
     {
@@ -67,12 +70,38 @@ int main()
 	for(int i=n-q;i<n;i++)
 	{shuf[i]=ar[i];}
 
-   }
-    
-    cout<<"The sequence after first shuffle is : \n";
-    for(int i=0;i<n;i++)
-        cout<<ar[i]<<"\n";
+    }
+	
     cout<<"The sequence after second shuffle is : \n";
+    for(int i=0;i<n;i++)
+        cout<<shuf[i]<<"\n";
+    if(n%2==0)
+    {
+	h=n/2;
+	for(int i=0,k=h;i<h;i++,k++)
+        {	
+	int temp;
+	temp=shuf[i];
+ 	shuf[i]=shuf[k];
+        shuf[k]=temp;
+        }
+    }
+    
+    else
+    {
+	h=(n/2);
+	int temp[n];
+	
+	for(int i=0;i<h;i++)
+	{	temp[i]=shuf[i];}
+	for(int i=0;i<h+1;i++)
+	{	ar[i]=ar[i+h];
+		if(i>0)
+		shuf[i+h]=temp[i-1];
+        }
+    }
+
+    cout<<"The sequence after third shuffle is : \n";
     for(int i=0;i<n;i++)
         cout<<shuf[i]<<"\n";
 
