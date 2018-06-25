@@ -83,15 +83,6 @@ int main (){
     head->next=temp;
       }
       break;
-   case 2:
-      if(head==NULL)/* create first node*/
-   head=createblock();
-      else{
-    temp=head;
-    head=createblock();
-    head->next=temp;
-      }
-
    case 3:
       if (head==NULL) printf("empty list\n");
       else
