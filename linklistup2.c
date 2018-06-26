@@ -74,7 +74,7 @@ int main (){
   node *head=NULL;
   node *temp=NULL;
 
-  printf("Please enter 1 to add node at the end, 2 to add node at the beginning, 3 to add in the middle, 4 to find nth block, 5 to print list, and 0 to exit");
+  printf("Please enter\n 1 to add node at the end\n 2 to add node at the beginning\n 3 to add in the middle\n 4 to find nth block\n 5 to print list\n and 0 to exit\n");
    scanf("%d",&option);
   getchar();
  while (option!=0){
@@ -127,7 +127,7 @@ int main (){
      printf("not a valid option\n");
      break;
    }
-   printf("Please enter 1 to add node at the end, 2 to add node at the beginning, 3 to add in the middle, 4 to find nth block, 5 to print list, and 0 to exit");
+   printf("Please enter\n 1 to add node at the end\n 2 to add node at the beginning\n 3 to add in the middle\n 4 to find nth block\n 5 to print list\n and 0 to exit\n");
    scanf("%d",&option);
     getchar();
  }
