@@ -82,10 +82,9 @@ node * deletefrombeg(node * head)       //delete node from the beginning
 int main (){
 
   /*creating linked list has three steps, create first node, create new block, add them at the last of the list*/
-  int option=1,n=0;
+  int option=1;
   node *qtop=NULL;
   node *qend=NULL;
-  node *temp=NULL;
 
   printf("Please enter\n 1 to push queue\n 2 to pop queue\n 3 to print list\n and 0 to exit :");
   scanf("%d",&option);
@@ -126,7 +125,7 @@ int main (){
 
  free(qtop);
  free(qend);
- free(temp);
+
 
  return 0;
 }
