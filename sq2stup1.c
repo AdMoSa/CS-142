@@ -1,3 +1,5 @@
+//Program to stimulate stack using single queue
+
 #include<stdio.h>
 #include<stdlib.h>
 
